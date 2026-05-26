@@ -1,4 +1,4 @@
-# ♻️ Tricolo — Plateforme IoT de tri intelligent des déchets
+# Tricolo — Plateforme IoT de tri intelligent des déchets
 
 ![Statut](https://img.shields.io/badge/Statut-Prototype%20acad%C3%A9mique-blue)
 ![Architecture](https://img.shields.io/badge/Architecture-IoT%20%2B%20Backend%20%2B%20Frontend-6f42c1)
@@ -8,7 +8,7 @@
 ![React](https://img.shields.io/badge/Frontend-React-61DAFB?logo=react&logoColor=black)
 ![Licence](https://img.shields.io/badge/Licence-MIT-green)
 
-## 📌 À propos
+##  À propos
 
 **Tricolo** est un projet IoT de tri des déchets composé de 3 briques :
 
@@ -20,7 +20,7 @@ Le dépôt actuel est le **repository parent** qui assemble ces composants via d
 
 ---
 
-## 🧩 Sous-modules du projet
+##  Sous-modules du projet
 
 | Module | Rôle | Lien |
 |---|---|---|
@@ -30,7 +30,7 @@ Le dépôt actuel est le **repository parent** qui assemble ces composants via d
 
 ---
 
-## 🔁 Vue d’ensemble fonctionnelle
+##  Vue d’ensemble fonctionnelle
 
 1. L’utilisateur dépose un déchet et déclenche la borne IoT.
 2. Le module IoT capture une image et l’envoie au backend.
@@ -41,7 +41,7 @@ Le dépôt actuel est le **repository parent** qui assemble ces composants via d
 
 ---
 
-## 🏗️ Architecture (haut niveau)
+##  Architecture (haut niveau)
 
 ```mermaid
 flowchart LR
@@ -56,7 +56,7 @@ flowchart LR
 
 ---
 
-## 🚀 Démarrage rapide (repo parent)
+##  Démarrage rapide (repo parent)
 
 ```bash
 git clone https://github.com/Andylamothe/Tricolo.git
@@ -72,7 +72,7 @@ Ensuite, lancez chaque module selon sa documentation propre :
 
 ---
 
-## 👥 Collaborateurs
+##  Collaborateurs
 
 Contributeurs identifiés à partir de l’historique Git du projet et des sous-modules :
 
@@ -88,6 +88,6 @@ Contributions automatisées (bots) observées dans l’historique :
 
 ---
 
-## 📄 Licence
+##  Licence
 
 Ce dépôt est distribué sous licence **MIT**. Voir [`LICENSE`](./LICENSE).
