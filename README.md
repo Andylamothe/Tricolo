@@ -88,6 +88,24 @@ Contributions automatisées (bots) observées dans l’historique :
 
 ---
 
+##  Photos du projet
+
+### Frontend (dashboard)
+
+![Frontend Tricolo](https://github.com/user-attachments/assets/f2002133-0c17-49e9-87b0-bab34cdc7b0c)
+
+### Projet (borne / démonstration)
+
+![Photo projet 1](https://github.com/user-attachments/assets/09846814-bca6-4519-8d6e-fc5a3c40a063)
+
+![Photo projet 2](https://github.com/user-attachments/assets/1bdb41a9-eca4-460f-b6cc-40bdbb59e543)
+
+### Équipe
+
+![Photo équipe](https://github.com/user-attachments/assets/4daf48c9-4b53-4f49-95b3-fb19241baecb)
+
+---
+
 ##  Licence
 
 Ce dépôt est distribué sous licence **MIT**. Voir [`LICENSE`](./LICENSE).
