@@ -1,0 +1,9 @@
+[submodule "Tricolo_IoT"]
+	path = Tricolo_IoT
+	url = https://github.com/Andylamothe/Tricolo_IoT
+[submodule "Tricolo_frontend"]
+	path = Tricolo_frontend
+	url = https://github.com/Andylamothe/Tricolo_frontend
+[submodule "Tricolo_Backend"]
+	path = Tricolo_Backend
+	url = https://github.com/Andylamothe/Tricolo_Backend
