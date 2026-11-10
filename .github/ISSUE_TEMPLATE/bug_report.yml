@@ -1,0 +1,41 @@
+name: Signaler un bug
+description: Signaler un comportement incorrect ou une régression.
+title: "[Bug] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci pour votre signalement. Pour une vulnérabilité, utilisez la procédure décrite dans SECURITY.md.
+  - type: input
+    id: component
+    attributes:
+      label: Composant concerné
+      description: Dépôt parent, Tricolo_IoT, Tricolo_Backend ou Tricolo_frontend.
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Décrivez le comportement observé et le comportement attendu.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Étapes pour reproduire
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environnement
+      description: Version, matériel, système d’exploitation et configuration pertinente.
+    validations:
+      required: false

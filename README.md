@@ -41,6 +41,47 @@ Le dépôt actuel est le **repository parent** qui assemble ces composants via d
 
 ---
 
+##  Composants et versions
+
+Les versions ci-dessous correspondent aux manifestes et à la documentation des sous-modules. Utilisez de préférence les versions LTS recommandées pour l’environnement d’exécution.
+
+| Composant | Version / exigence | Utilisation |
+|---|---|---|
+| Python | 3.x (version non verrouillée ; Python 3.11+ recommandé) | Application embarquée Raspberry Pi |
+| Node.js | 20.19+ ou 22.12+ | Backend et frontend |
+| npm | Version fournie avec Node.js | Installation des dépendances JavaScript |
+| TypeScript | 5.9.x | Backend |
+| JavaScript / JSX | ES2020+ / JSX | Frontend React et scripts backend |
+| React | 19.2.x | Interface web |
+| Vite | 7.2.x | Développement et build frontend |
+| Express | 5.2.x | API backend |
+| MongoDB / Mongoose | Mongoose 8.18.x | Persistance des données |
+| Raspberry Pi OS | Version récente compatible avec Python 3 | Exécution IoT |
+
+### Dépendances matérielles IoT
+
+Le fonctionnement complet de `Tricolo_IoT` nécessite :
+
+- un Raspberry Pi ;
+- une caméra compatible `Picamera2` ;
+- un bouton poussoir ;
+- deux LED RGB et les résistances/câblage adaptés ;
+- un système audio compatible avec `mpg123` ;
+- une connexion réseau vers le backend.
+
+### Services et configuration
+
+Le fonctionnement de bout en bout nécessite également :
+
+- une base de données MongoDB ;
+- un accès à l’API d’analyse d’image configurée dans le backend ;
+- les identifiants et secrets définis dans `Tricolo_Backend/src/config/.env.example` ;
+- une URL de backend accessible par le Raspberry Pi et le frontend.
+
+Les dépendances Python et JavaScript détaillées sont documentées dans les README et manifestes de chaque sous-module. Installez-les depuis les répertoires concernés avec `npm install` pour le backend/frontend et `pip` selon les dépendances IoT nécessaires.
+
+---
+
 ##  Architecture (haut niveau)
 
 ```mermaid
@@ -69,6 +110,18 @@ Ensuite, lancez chaque module selon sa documentation propre :
 - `Tricolo_IoT/README.md`
 - `Tricolo_Backend/README.md`
 - `Tricolo_frontend/README.md`
+
+---
+
+##  Contribuer
+
+Les contributions sont les bienvenues : correction de bugs, amélioration de la documentation, nouvelles fonctionnalités et retours d’expérience.
+
+1. Consultez [`CONTRIBUTING.md`](./.github/CONTRIBUTING.md).
+2. Ouvrez une issue pour discuter d’un changement important.
+3. Créez une branche dédiée et soumettez une pull request.
+
+Avant de contribuer à un sous-module, vérifiez également ses règles et sa licence propres. Ce dépôt parent référence les trois composants comme des dépôts indépendants ; chaque sous-module doit donc être publié et maintenu sous une licence compatible séparément.
 
 ---
 
@@ -108,4 +161,6 @@ Contributions automatisées (bots) observées dans l’historique :
 
 ##  Licence
 
-Ce dépôt est distribué sous licence **MIT**. Voir [`LICENSE`](./LICENSE).
+Le dépôt parent est distribué sous licence **MIT**. Voir [`LICENSE`](./LICENSE).
+
+Les sous-modules sont des dépôts indépendants et peuvent avoir leurs propres conditions de licence. Consultez leur fichier `LICENSE` avant de réutiliser leur contenu.

@@ -1,0 +1,27 @@
+name: Proposer une amélioration
+description: Proposer une fonctionnalité ou une amélioration documentée.
+title: "[Feature] "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problème à résoudre
+      description: Décrivez le besoin ou le cas d’usage.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposition
+      description: Décrivez la solution souhaitée et le composant concerné.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives envisagées
+      description: Quelles autres solutions avez-vous considérées ?
+    validations:
+      required: false
